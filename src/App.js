@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import AsideMenu from './components/AsideMenu'
+import HomePage from './pages/Home/HomePage'
+import MealPage from './pages/Meal/MealPage'
 
+import "./index.css"
+import styled from 'styled-components'
+
+
+const Main = styled.main`
+  display: flex;
+`
 function App() {
+
+  // const [macroNutrients, setMacros] = useContext(MacroNutrients)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Main>
+        <AsideMenu></AsideMenu>
+    </Main>
   );
 }
 
